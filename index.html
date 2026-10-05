@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!--
+================================================================
+株式会社ＮＭＩＣｏｎｓｕｌｔｉｎｇ ブランドサイト デザイン案（9/26ハウススタイル版）
+  コンセプト：「散らばる書類を、一枚の見取り図に。」
+    補助金・融資という「事業の資金」と、相続という「家族の資産」。性質の違う二つのお金の相談を、
+    ばらばらの書類や数字を一枚の見取り図（方眼の図面）に整える仕事として表現。
+    ※社名の「NMI」は代表者のお名前の頭文字と重なる可能性があるため、社名からの着想は採用せず、
+      事業内容のみから着想しています。所在地・地名からの着想も採用していません。
+    ・ヒーロー：机上のノートと書き物の写真が断片に分かれて散らばった状態から、方眼に沿って一枚に組み上がり、
+      朱の墨線が引かれていくCanvas（写真を加工する型）
+    ・右端のスクロールレール：揺れていた方位針が、読み進めるほど北に定まる（±00°で静止）
+    ・図：「事業の資金」と「家族の資産」の二本の流れが、一枚の見取り図に合流するSVG
+  書体：Zen Old Mincho ＋ Zen Kaku Gothic New ＋ Bodoni Moda
+  配色：藍 #111A2B ／ 朱 #D9694C ／ 紙 #EFEAE0
+  デプロイ：Cloudflare Pages（Direct Upload）にこのファイルをそのままアップロード。
+            ビルド不要。外部依存は Google Fonts と Unsplash 画像のみ。
+
+  ■ 公開前の確認事項（チェックリスト）
+  【確認事項】「NMI」の由来は未確認です。代表者名の頭文字と重なる可能性があるため、本文では社名を解釈していません。
+  【確認事項】英字表記「NMI Consulting」・ロゴ文字とマークは仮です。
+  【確認事項】キャッチコピー「散らばる書類を、一枚の見取り図に。」と各見出しは制作側の案です。
+  【確認事項】補助金の申請書類の作成代行は行政書士の業務範囲に関わります。「申請サポート」の具体的な範囲をご確認ください。
+  【確認事項】融資のあっせん・仲介と受け取られない表現にしています（貸金業法との関係）。支援の範囲をご確認ください。
+  【確認事項】相続の個別の税務・法律判断は税理士・弁護士等の業務です。士業連携の体制を記載するか確認してください。
+  【確認事項】各サービスの説明・進め方・大切にしていることはCSVを膨らませた案です。
+  【確認事項】採択実績・件数・金額、設立年月日・資本金等はCSVに無いため掲載していません（会社概要ではコメントアウト）。
+  【確認事項】代表者の役職名は「代表取締役」と仮置きしています。
+  【確認事項】代表メッセージは草案です。ご本人の確認・修正を経て公開してください。署名欄の氏名は会社概要に記載のため省略しています。
+  【確認事項】画像はUnsplashの仮素材（差し替え推奨）：1434030216411-0b793f4b4173 / 1579621970563-ebec7560ff3e / 1607863680198-23d4b2565df0 / 1450101499163-c8848c66ca85 / 1505664194779-8beaceb93744
+  【確認事項】旧案のファーストビュー写真（1554224154-26032ffc0d07）は、海外の税務書式と政府機関の紋章が読み取れるため使用をやめました。
+  【確認事項】OGP画像・favicon（仮の方眼マーク）・公開URL
+  ※ご依頼に合わせ、連絡用のフォーム・エリア、代表者写真は設けていません。
+================================================================
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>株式会社NMIConsulting｜補助金申請サポート・融資相談・相続コンサルティング</title>
+<meta name="description" content="株式会社NMIConsultingは、補助金の申請サポートや融資の相談支援、相続に関するご相談に応じるコンサルティングを行っています。事業の資金と家族の資産を、一枚の見取り図に整えます。">
+<meta property="og:title" content="株式会社NMIConsulting｜散らばる書類を、一枚の見取り図に。">
+<meta property="og:description" content="補助金の申請サポート、融資の相談支援、相続のコンサルティング。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<!-- 【確認事項】og:url / og:image は公開ドメイン確定後に設定 -->
+<meta name="theme-color" content="#111A2B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111A2B'/%3E%3Cpath d='M7 7h18v18H7z M7 16h18 M16 7v18' fill='none' stroke='%23D9694C' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Zen+Old+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  /* 藍の製図台に、朱の墨線を引く */
+  --ai:#111A2B;          /* 基調：藍の製図台 */
+  --ai-2:#18233A;        /* 一段明るい藍 */
+  --ai-deep:#0C1220;     /* フッター */
+  --shu:#D9694C;         /* 差し色：朱の墨線 */
+  --kami:#EFEAE0;        /* 紙：見取り図の用紙 */
+  --base:var(--ai);--base2:var(--ai-2);--deep:var(--ai-deep);
+  --base-rgb:17,26,43;
+  --text:#EEEBE4;--mute:#8F98AA;--soft:rgba(238,235,228,.8);
+  --accent:var(--shu);--accent-rgb:217,105,76;
+  --line:rgba(238,235,228,.13);--line-strong:rgba(238,235,228,.3);
+  --paper:var(--kami);--ink:#18202E;--ink-rgb:24,32,46;--ink-mute:#5F6676;--accent-ink:#B4492E;
+  --fallback:linear-gradient(rgba(217,105,76,.12) 1px,transparent 1px) 0 0/100% 32px,linear-gradient(90deg,rgba(217,105,76,.12) 1px,transparent 1px) 0 0/32px 100%,linear-gradient(135deg,#18233A,#0C1220);
+  --serif:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --latin:"Bodoni Moda","Didot","Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --num:var(--latin);
+  --header-h:72px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--base);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.04em;word-break:auto-phrase;text-wrap:pretty;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,p,li,dd,dt{word-break:auto-phrase}
+.nw{display:inline-block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:fixed;left:12px;top:-60px;z-index:200;background:var(--accent);color:var(--base);padding:10px 16px;text-decoration:none;font-weight:700;transition:top .2s}
+.skip:focus{top:calc(12px + env(safe-area-inset-top,0px))}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:min(1160px,100% - 48px);margin:0 auto}
+.sec{padding:clamp(96px,14vw,180px) 0;position:relative}
+.alt{background:var(--base2);--sec-bg:var(--base2)}
+.deep{background:var(--deep);--sec-bg:var(--deep)}
+.paper{background:var(--paper);color:var(--ink);--line:rgba(var(--ink-rgb),.16);--line-strong:rgba(var(--ink-rgb),.5);--mute:var(--ink-mute);--soft:rgba(var(--ink-rgb),.8);--sec-bg:var(--paper);--accent:var(--accent-ink)}
+.lead{max-width:34em;margin:0 0 1.4em}
+p{margin:0 0 1.3em}
+
+/* header */
+.header{position:fixed;inset:0 0 auto 0;z-index:100;padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid transparent;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.header.is-scrolled{background:rgba(var(--base-rgb),.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:var(--line)}
+.header-in{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 clamp(20px,4vw,56px);max-width:1440px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.logo svg{flex:none}
+.gnav ul{list-style:none;margin:0;padding:0;display:flex;gap:clamp(16px,2.2vw,34px)}
+.gnav a{position:relative;display:block;padding:6px 0;text-decoration:none;font-size:13px;letter-spacing:.12em}
+.menu-btn{display:none;background:none;border:0;color:var(--text);width:44px;height:44px;cursor:pointer;position:relative;flex:none}
+@media (max-width:900px){
+ :root{--header-h:64px}
+ .menu-btn{display:block;z-index:120}
+ .gnav{position:fixed;inset:0;background:rgba(var(--base-rgb),.97);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;padding:env(safe-area-inset-top,0px) 24px env(safe-area-inset-bottom,0px)}
+ .gnav.is-open{opacity:1;visibility:visible}
+ .gnav ul{flex-direction:column;align-items:center;gap:26px}
+ .gnav a{font-family:var(--serif);font-size:20px;letter-spacing:.14em}
+}
+
+/* hero shared */
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.js .hero [data-in]{opacity:0;transform:translateY(14px);transition:opacity 1.2s cubic-bezier(.22,.7,.2,1),transform 1.2s cubic-bezier(.22,.7,.2,1)}
+.js .hero .v[data-in]{transform:translateY(-14px)}
+.js .is-loaded .hero [data-in]{opacity:1;transform:none}
+.is-loaded .hero [data-in="2"]{transition-delay:.4s}
+.is-loaded .hero [data-in="3"]{transition-delay:.85s}
+.is-loaded .hero [data-in="4"]{transition-delay:1.25s}
+.scroll-cue{position:absolute;z-index:2;display:flex;align-items:center;gap:12px;font-family:var(--latin);font-size:12px;letter-spacing:.24em;color:var(--mute);text-decoration:none;text-transform:uppercase}
+.scroll-cue i{display:block;width:1px;height:44px;background:linear-gradient(var(--mute),transparent);animation:cue 2.4s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity 1s cubic-bezier(.22,.7,.2,1),transform 1s cubic-bezier(.22,.7,.2,1)}
+.js .reveal.is-in{opacity:1;transform:none}
+.js .reveal--fade{transform:none}
+
+/* photos */
+.ph{position:relative;overflow:hidden;margin:0;background:linear-gradient(135deg,var(--base2),var(--deep))}
+.ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(1.03)}
+.ph.is-fallback{background:var(--fallback)}
+
+/* concept */
+.concept-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.concept-text p{max-width:30em}
+.fig{margin:0}
+.fig svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto;overflow:visible}
+.fig figcaption{margin-top:16px;text-align:center;font-size:13px;color:var(--mute);letter-spacing:.08em}
+.fig .ln{fill:none;stroke:var(--accent);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.4s cubic-bezier(.45,.05,.2,1) .3s}
+.fig .ln.d2{transition-delay:.9s}.fig .ln.d3{transition-delay:1.5s}.fig .ln.d4{transition-delay:2.1s}
+.fig .soft{fill:none;stroke:var(--line-strong);stroke-width:1}
+.fig .dot{fill:var(--accent);opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(.3);transition:opacity .8s 1.2s,transform .8s cubic-bezier(.3,1.6,.5,1) 1.2s}
+.fig .lbl{fill:currentColor;font-family:var(--serif);font-size:17px;letter-spacing:.16em;opacity:0;transition:opacity 1s 1.8s}
+.fig .lbl-s{fill:var(--mute);font-family:var(--sans);font-size:11px;letter-spacing:.14em;opacity:0;transition:opacity 1s 2s}
+.fig.is-in .ln{stroke-dashoffset:0}
+.fig.is-in .dot{opacity:1;transform:none}
+.fig.is-in .lbl,.fig.is-in .lbl-s{opacity:1}
+@media (max-width:900px){.concept-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* band */
+.band{position:relative;height:clamp(260px,44vw,540px);overflow:hidden;margin:0;background:var(--fallback)}
+.band img{position:absolute;left:0;top:-9%;width:100%;height:118%;object-fit:cover;filter:saturate(.7) brightness(.66);will-change:transform}
+.band figcaption{position:absolute;left:clamp(24px,6vw,88px);bottom:clamp(24px,5vw,56px);z-index:1;font-family:var(--serif);font-size:clamp(18px,2vw,24px);letter-spacing:.16em;line-height:1.9;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.55)}
+
+/* business rows */
+.biz-intro{max-width:36em;margin:-24px 0 clamp(56px,8vw,96px);color:var(--mute)}
+.biz{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,88px);align-items:center}
+.biz+.biz{margin-top:clamp(72px,10vw,128px)}
+.biz:nth-of-type(even) .biz__media{order:2}
+.biz__media{aspect-ratio:4/3}
+.biz__media img{transform:scale(1.06);transition:transform 2.2s cubic-bezier(.2,.6,.2,1)}
+.biz.is-in .biz__media img{transform:scale(1)}
+.biz:hover .biz__media img{transform:scale(1.03)}
+.biz__kind{margin:0 0 10px;font-size:13px;letter-spacing:.16em;color:var(--accent)}
+.biz h3{font-family:var(--serif);font-weight:600;font-size:clamp(21px,2.3vw,28px);line-height:1.6;letter-spacing:.08em;margin:0 0 18px}
+.biz p{color:var(--soft)}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{font-size:12.5px;letter-spacing:.08em;padding:4px 13px;border:1px solid var(--line-strong);border-radius:999px}
+.note{font-size:13px;color:var(--mute);margin:18px 0 0}
+@media (max-width:900px){.biz{grid-template-columns:minmax(0,1fr)}.biz:nth-of-type(even) .biz__media{order:0}}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:clamp(16px,2.4vw,32px);position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:11px;height:1px;background:var(--line)}
+.steps::after{content:"";position:absolute;left:0;top:11px;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 2.4s cubic-bezier(.6,.1,.2,1)}
+.steps.is-in::after{transform:scaleX(1)}
+.step{position:relative;padding-top:46px}
+.step__dot{position:absolute;left:0;top:0;width:23px;height:23px;border-radius:50%;border:1px solid var(--mute);background:var(--sec-bg,var(--base));display:grid;place-items:center}
+.step__dot::after{content:"";width:11px;height:11px;border-radius:50%;background:var(--accent);transform:scale(0);transition:transform .5s cubic-bezier(.3,1.6,.5,1) var(--d,0s)}
+.steps.is-in .step__dot::after{transform:scale(1)}
+.step__no{font-family:var(--num);font-size:13px;color:var(--accent);letter-spacing:.12em}
+.step h3{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.18em;margin:6px 0 4px}
+.step__sub{font-size:12.5px;color:var(--mute);letter-spacing:.1em;margin:0 0 10px}
+.step p{font-size:14.5px;margin:0;color:var(--soft)}
+.loop{display:flex;align-items:center;gap:14px;margin:52px 0 0;color:var(--mute);font-size:14px}
+.loop svg{flex:none}
+@media (max-width:900px){
+ .steps{grid-template-columns:minmax(0,1fr);gap:0;padding-left:42px}
+ .steps::before,.steps::after{left:11px;right:auto;top:10px;bottom:10px;width:1px;height:auto}
+ .steps::after{transform:scaleY(0);transform-origin:top}
+ .steps.is-in::after{transform:scaleY(1)}
+ .step{padding:0 0 36px}
+ .step__dot{left:-42px}
+}
+
+/* values */
+.values{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.values li{padding:8px clamp(18px,3vw,40px) 8px;border-left:1px solid var(--line)}
+.values li:first-child{border-left:0;padding-left:0}
+.values h3{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.12em;margin:0 0 12px;line-height:1.6}
+.values h3 i{display:block;font-style:normal;font-family:var(--latin);font-size:13px;letter-spacing:.2em;color:var(--accent);margin-bottom:8px}
+.values p{margin:0;font-size:14.5px;color:var(--soft)}
+@media (max-width:860px){.values{grid-template-columns:minmax(0,1fr)}.values li{border-left:0;border-top:1px solid var(--line);padding:24px 0}.values li:first-child{border-top:0;padding-top:0}}
+
+/* message */
+.msg{display:flex;flex-direction:row-reverse;gap:clamp(40px,6vw,96px);justify-content:center;align-items:flex-start}
+.msg__title{writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;font-size:clamp(28px,3vw,40px);letter-spacing:.2em;line-height:1.7;margin:0;flex:none}
+.msg__body{writing-mode:vertical-rl;font-family:var(--serif);font-size:16.5px;line-height:2.3;letter-spacing:.14em;height:30em;max-width:100%;overflow-x:auto;overflow-y:hidden}
+.msg__body p{margin:0 0 0 1.5em}
+.msg__body .first{font-size:1.25em}
+.msg__sign{margin-top:auto!important;text-align:end;font-family:var(--sans)}
+.msg__sign small{display:block;font-size:13px;color:var(--mute);letter-spacing:.2em}
+.msg__sign strong{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.3em}
+@media (max-width:900px){
+ .msg{flex-direction:column;gap:32px}
+ .msg__title,.msg__body{writing-mode:horizontal-tb;height:auto}
+ .msg__body{line-height:2.1;letter-spacing:.06em;overflow:visible}
+ .msg__body p{margin:0 0 1.4em}
+ .msg__sign{text-align:right}
+}
+
+/* company */
+.company-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.company-grid .sh{margin-bottom:24px}
+@media (max-width:900px){.company-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* footer */
+.footer{background:var(--deep);border-top:1px solid var(--line);padding:clamp(56px,8vw,80px) 0 calc(40px + env(safe-area-inset-bottom,0px))}
+.footer-in{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:32px}
+.footer-tag{margin:18px 0 0;font-family:var(--serif);font-size:clamp(15px,1.6vw,19px);letter-spacing:.18em}
+.footer-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px}
+.footer-nav a{text-decoration:none;font-size:13px;color:var(--mute);letter-spacing:.1em;transition:color .3s}
+.footer-nav a:hover{color:var(--text)}
+.copy{width:100%;margin:36px 0 0;font-family:var(--latin);font-size:12.5px;color:var(--mute);letter-spacing:.1em}
+.footer--center .footer-in{flex-direction:column;align-items:center;text-align:center}
+.footer--center .footer-nav ul{justify-content:center}
+
+/* rail base */
+.rail{position:fixed;right:clamp(10px,1.6vw,24px);top:50%;transform:translateY(-50%);height:min(54vh,480px);width:18px;z-index:90;pointer-events:none}
+.rail__line{position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--line-strong);opacity:.6}
+.rail__fill{position:absolute;left:8px;top:0;width:1px;height:100%;background:var(--accent);transform-origin:top;transform:scaleY(0)}
+.rail__tick{position:absolute;left:4px;width:9px;height:1px;background:rgba(var(--accent-rgb),.45);transition:width .4s,background .4s}
+.rail__tick.is-passed{width:11px;background:var(--accent)}
+.rail.on-light{--line-strong:rgba(var(--ink-rgb),.4)}
+@media (max-width:900px){.rail{right:6px;height:38vh}.rail__read{display:none}}
+
+.sh{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 20px;margin:0 0 clamp(40px,6vw,72px)}
+.sh h2{font-family:var(--serif);font-weight:600;font-size:clamp(25px,3vw,38px);line-height:1.55;letter-spacing:.1em;margin:0}
+.sh__en{font-family:var(--latin);font-style:italic;font-size:19px;color:var(--accent);letter-spacing:.04em}
+.gnav a::after{content:"";position:absolute;left:50%;bottom:-3px;width:4px;height:4px;border-radius:50%;background:var(--accent);transform:translateX(-50%) scale(0);transition:transform .3s}
+.gnav a:hover::after,.gnav a:focus-visible::after{transform:translateX(-50%) scale(1)}
+.menu-btn span{position:absolute;left:10px;right:10px;height:1px;background:currentColor;transition:transform .3s,top .3s}
+.menu-btn span:nth-child(1){top:17px}.menu-btn span:nth-child(2){top:26px}
+.menu-btn[aria-expanded="true"] span:nth-child(1){top:22px;transform:rotate(28deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){top:22px;transform:rotate(-28deg)}
+.profile{margin:0;border-top:1px solid var(--line-strong)}
+.profile>div{display:grid;grid-template-columns:9em minmax(0,1fr);gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.profile dt{color:var(--mute);font-size:14px;letter-spacing:.14em}
+.profile dd{margin:0}
+.profile ul{margin:0;padding:0;list-style:none}
+.profile li{position:relative;padding-left:1.2em}
+.profile li+li{margin-top:.3em}
+.profile li::before{content:"";position:absolute;left:0;top:.8em;width:6px;height:6px;background:var(--accent);border-radius:0;width:7px;height:2px;top:.85em}
+@media (max-width:760px){.profile>div{grid-template-columns:minmax(0,1fr);gap:4px}}
+.logo__t{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+.logo__t b{font-family:var(--latin);font-weight:500;font-size:20px;letter-spacing:.04em}
+.logo__t small{font-size:10px;color:var(--mute);letter-spacing:.08em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* hero : E photo-driven canvas */
+.hero{background:var(--base)}
+.hero__veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(17,26,43,.6) 0%,rgba(17,26,43,.1) 30%,rgba(17,26,43,.15) 55%,rgba(17,26,43,.92) 100%),linear-gradient(90deg,rgba(17,26,43,.75) 0%,transparent 55%)}
+.hero__in{position:relative;z-index:1;min-height:100vh;min-height:100svh;max-width:1440px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:40px;padding:calc(var(--header-h) + 48px) clamp(48px,7vw,110px) 72px clamp(20px,5vw,72px)}
+.hero h1{writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;font-size:clamp(34px,3.9vw,54px);line-height:1.55;letter-spacing:.18em;margin:0 clamp(0px,4vw,60px) 0 0;align-self:center;text-shadow:0 2px 24px rgba(12,18,32,.7)}
+.hero h1 span{display:block}
+.hero h1 span+span{padding-top:1.8em}
+.hero__copy{max-width:31em}
+.hero__en{font-family:var(--latin);font-style:italic;font-size:clamp(17px,1.5vw,21px);color:var(--accent);margin:0 0 14px}
+.hero__lead{font-size:15px;color:var(--soft);margin:0 0 24px}
+.idx{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.idx a{display:inline-flex;gap:10px;align-items:baseline;padding:7px 16px;border:1px solid var(--line-strong);border-radius:999px;font-size:13px;letter-spacing:.08em;text-decoration:none;background:rgba(17,26,43,.4);transition:border-color .3s,background .3s}
+.idx a:hover{border-color:var(--accent);background:rgba(217,105,76,.1)}
+.idx em{font-style:normal;font-family:var(--latin);color:var(--accent)}
+.hero .scroll-cue{left:clamp(20px,5vw,72px);bottom:22px}
+.hero .scroll-cue i{width:44px;height:1px;background:var(--mute);animation:hint 2.4s ease-in-out infinite;transform-origin:left}
+@keyframes hint{0%{transform:scaleX(0)}60%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
+@media (max-width:760px){
+ .hero__in{grid-template-columns:minmax(0,1fr);align-content:end;padding:calc(var(--header-h) + 40px) 22px 84px}
+ .hero h1{writing-mode:horizontal-tb;font-size:clamp(28px,8.4vw,40px);letter-spacing:.08em;margin:0 0 28px;align-self:start;order:-1}
+ .hero h1 span+span{padding-top:0;padding-left:1em}
+ .hero__veil{background:linear-gradient(180deg,rgba(17,26,43,.7) 0%,rgba(17,26,43,.3) 40%,rgba(17,26,43,.94) 78%)}
+}
+
+/* concept fig */
+.fig .grid-sq{fill:none;stroke:var(--line-strong);stroke-width:1}
+.fig .lbl{font-size:16px}
+
+/* stance */
+.stance-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line-strong)}
+.stance-grid li{padding:32px clamp(18px,2.6vw,36px) 8px 0;border-right:1px solid var(--line)}
+.stance-grid li+li{padding-left:clamp(18px,2.6vw,36px)}
+.stance-grid li:last-child{border-right:0}
+.stance-grid i{display:block;font-family:var(--latin);font-style:italic;font-size:26px;color:var(--accent);margin-bottom:10px}
+.stance-grid h3{font-family:var(--serif);font-weight:600;font-size:19px;letter-spacing:.12em;margin:0 0 10px}
+.stance-grid p{margin:0;font-size:14.5px;color:var(--soft)}
+@media (max-width:860px){.stance-grid{grid-template-columns:minmax(0,1fr)}.stance-grid li,.stance-grid li+li{padding:24px 0;border-right:0;border-bottom:1px solid var(--line)}}
+
+/* rail */
+.rail__needle{position:absolute;left:8px;top:0;width:22px;height:22px;color:var(--text);transform:translate(-50%,-50%)}
+.rail__read{position:absolute;right:22px;top:0;transform:translateY(-50%);font-family:var(--latin);font-size:12px;color:var(--mute);writing-mode:vertical-rl;letter-spacing:.1em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.rail.on-light .rail__needle{color:var(--ink)}
+
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .js .reveal,.js .hero [data-in]{opacity:1;transform:none}
+ .fig .ln{stroke-dashoffset:0}.fig .dot,.fig .lbl,.fig .lbl-s{opacity:1;transform:none}
+ .steps::after{transform:none}.step__dot::after{transform:scale(1)}
+ .biz__media img{transform:none}
+ .band img{transform:none!important}
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="header" id="header">
+  <div class="header-in">
+    <!-- 【確認事項】英字ロゴ「NMI Consulting」と方眼のマークは仮です -->
+    <a class="logo" href="#top" aria-label="株式会社NMI Consulting トップへ"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5h22v22H5z M5 16h22 M16 5v22" fill="none" stroke="#D9694C" stroke-width="1.4"/><circle cx="16" cy="16" r="2.4" fill="#EEEBE4"/></svg><span class="logo__t"><b>NMI Consulting</b><small>株式会社NMI Consulting</small></span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-controls="gnav" aria-expanded="false" aria-label="メニューを開く"><span></span><span></span></button>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul>
+      <li><a href="#concept">考え方</a></li>
+      <li><a href="#business">事業内容</a></li>
+      <li><a href="#stance">大切にしていること</a></li>
+      <li><a href="#flow">ご相談の流れ</a></li>
+      <li><a href="#message">代表メッセージ</a></li>
+      <li><a href="#company">会社概要</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="rail" id="rail" aria-hidden="true">
+  <div class="rail__line"></div>
+  <div class="rail__fill" id="railFill"></div>
+  <svg class="rail__needle" id="railNeedle" viewBox="-12 -12 24 24"><circle r="10" fill="none" stroke="currentColor" stroke-width=".8" opacity=".5"/><path d="M0-9 3 0 0 9-3 0Z" fill="#D9694C"/><path d="M0 0 3 0 0 9-3 0Z" fill="currentColor" opacity=".55"/></svg><span class="rail__read" id="railRead">±00°</span>
+</div>
+
+<main id="main">
+<!-- ===== Hero (E: 写真を組み上げるCanvas) ===== -->
+<section class="hero" id="top" data-rail aria-labelledby="heroTitle">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <!-- 画像：Unsplash（仮）1434030216411-0b793f4b4173 をCanvasで断片化して描画 -->
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="hero__in">
+    <div class="hero__copy" data-in="3">
+      <p class="hero__en" lang="en">Funds for the business, assets for the family.</p>
+      <p class="hero__lead">補助金の申請サポートや融資の相談支援に幅広く携わり、相続に関するご相談に応じるコンサルティングも手がけています。性質の違う二つのお金の悩みを、一枚の見取り図に整えます。</p>
+      <ul class="idx" aria-label="事業の索引">
+        <li><a href="#svc-subsidy"><em>i.</em>補助金の申請サポート</a></li>
+        <li><a href="#svc-loan"><em>ii.</em>融資の相談支援</a></li>
+        <li><a href="#svc-inherit"><em>iii.</em>相続のコンサルティング</a></li>
+      </ul>
+    </div>
+    <!-- 【確認事項】キャッチコピーは制作側の案 -->
+    <h1 class="v" id="heroTitle" data-in="1"><span>散らばる書類を、</span><span>一枚の見取り図に。</span></h1>
+  </div>
+  <a class="scroll-cue" href="#concept"><i></i>Scroll</a>
+</section>
+
+<!-- ===== Concept ===== -->
+<section class="sec" id="concept" data-rail aria-labelledby="conceptTitle">
+  <div class="wrap concept-grid">
+    <div class="concept-text reveal">
+      <div class="sh sh--beside"><h2 id="conceptTitle">調べる時間を、考える時間に。</h2><span class="sh__en" lang="en">Our way</span></div>
+      <!-- 【確認事項】理念文は制作側の案 -->
+      <p>事業を前に進めたいとき、資金はいつも大きな論点になります。使える補助金はあるのか、融資はどう考えればよいのか。制度や書類は複雑で、本業の合間に調べきるのは簡単ではありません。</p>
+      <p>そして事業や暮らしの先には、家族へ資産をどう引き継ぐかという問いも待っています。相続は、いつか必ず向き合うものでありながら、話を切り出しにくいテーマです。</p>
+      <p>私たちは、散らばった情報と書類を一枚の見取り図に整え、何から、どの順番で手をつければよいかを一緒に見つけます。事業の資金と、家族の資産。どちらにも同じ姿勢で向き合います。</p>
+    </div>
+    <figure class="fig reveal--fade" data-draw>
+      <svg viewBox="0 0 440 360" role="img" aria-labelledby="figT figD">
+        <title id="figT">二つのお金が一枚の見取り図に合流する図</title>
+        <desc id="figD">左上の「事業の資金（補助金・融資）」と右上の「家族の資産（相続）」から伸びる二本の線が、下の方眼の見取り図で合流する図。</desc>
+        <rect class="grid-sq" x="130" y="220" width="180" height="120"/>
+        <path class="soft" d="M130 250h180M130 280h180M130 310h180M175 220v120M220 220v120M265 220v120"/>
+        <path class="ln" pathLength="1" d="M70 60 C70 150 150 150 190 220"/>
+        <path class="ln d2" pathLength="1" d="M370 60 C370 150 290 150 250 220"/>
+        <path class="ln d3" pathLength="1" d="M190 220 L220 280 L250 220"/>
+        <path class="ln d4" pathLength="1" d="M130 220 h180 v120 h-180 z"/>
+        <circle class="dot" cx="70" cy="60" r="6"/><circle class="dot" cx="370" cy="60" r="6"/><circle class="dot" cx="220" cy="280" r="7"/>
+        <text class="lbl" x="70" y="30" text-anchor="middle">事業の資金</text>
+        <text class="lbl-s" x="70" y="96" text-anchor="middle">補助金・融資</text>
+        <text class="lbl" x="370" y="30" text-anchor="middle">家族の資産</text>
+        <text class="lbl-s" x="370" y="96" text-anchor="middle">相続</text>
+        <text class="lbl-s" x="220" y="356" text-anchor="middle">一枚の見取り図</text>
+      </svg>
+      <figcaption>性質の違う二つの相談を、同じ一枚の上で考える。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<figure class="band">
+  <!-- 画像：Unsplash（仮）1505664194779-8beaceb93744 差し替え推奨 -->
+  <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&amp;fit=crop&amp;w=2000&amp;q=72" alt="" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+  <figcaption>制度と書類を、<br>読みとける形に整える。</figcaption>
+</figure>
+
+<!-- ===== Business ===== -->
+<section class="sec" id="business" data-rail aria-labelledby="bizTitle">
+  <div class="wrap">
+    <div class="sh sh--beside"><h2 id="bizTitle">事業内容</h2><span class="sh__en" lang="en">Services</span></div>
+    <!-- 【確認事項】各サービスの説明・項目はCSVの事業内容を膨らませた案 -->
+    <article class="biz reveal" id="svc-subsidy" aria-labelledby="b1">
+      <figure class="biz__media ph">
+        <!-- 画像：Unsplash（仮）1579621970563-ebec7560ff3e -->
+        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="硬貨の山から芽を出す若葉" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+      </figure>
+      <div>
+        <p class="biz__kind">事業の資金 ── 補助金</p>
+        <h3 id="b1">補助金の<br>申請サポート</h3>
+        <p>事業の目的や計画に合いそうな補助金を探し、要件の確認から申請の準備までを支えます。「うちでも使える制度はあるのか」という段階から、ご相談いただけます。</p>
+        <ul class="tags"><li>制度の情報収集</li><li>要件の確認</li><li>事業計画の整理</li><li>申請準備の支援</li></ul>
+        <!-- 【確認事項】申請書類の作成代行の可否（行政書士業務との関係） -->
+        <p class="note">※申請書類の作成代行が必要な場合は、行政書士などの専門家と連携します。</p>
+      </div>
+    </article>
+    <article class="biz reveal" id="svc-loan" aria-labelledby="b2">
+      <figure class="biz__media ph">
+        <!-- 画像：Unsplash（仮）1607863680198-23d4b2565df0 -->
+        <img src="https://images.unsplash.com/photo-1607863680198-23d4b2565df0?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="机の上に置かれた豚の貯金箱と硬貨" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+      </figure>
+      <div>
+        <p class="biz__kind">事業の資金 ── 融資</p>
+        <h3 id="b2">融資の<br>相談支援</h3>
+        <!-- 【確認事項】融資のあっせん・仲介ではなく、相談・準備の支援である旨の表現で問題ないか -->
+        <p>運転資金や設備投資など、借入を検討するときの考え方や資金計画の整理を、一緒に進めます。何のために、いくら必要で、どう返していくのか。言葉と数字にして準備します。</p>
+        <ul class="tags"><li>資金需要の整理</li><li>資金計画の作成支援</li><li>金融機関との面談準備</li></ul>
+      </div>
+    </article>
+    <article class="biz reveal" id="svc-inherit" aria-labelledby="b3">
+      <figure class="biz__media ph">
+        <!-- 画像：Unsplash（仮）1450101499163-c8848c66ca85 -->
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="書類に目を通し、書き込む手元" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+      </figure>
+      <div>
+        <p class="biz__kind">家族の資産 ── 相続</p>
+        <h3 id="b3">相続に関する<br>コンサルティング</h3>
+        <p>相続を前に、何を、誰に、どのように引き継ぐのか。財産や家族の状況を整理し、話し合いの準備や進め方を、ご一緒に考えます。</p>
+        <ul class="tags"><li>財産・状況の整理</li><li>家族での話し合いの準備</li><li>進め方の相談</li></ul>
+        <!-- 【確認事項】士業連携の体制 -->
+        <p class="note">※個別の税務・法律に関するご判断は、税理士・弁護士などの専門家と連携して進めます。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Stance ===== -->
+<section class="sec alt" id="stance" data-rail aria-labelledby="stTitle">
+  <div class="wrap">
+    <div class="sh sh--beside"><h2 id="stTitle">大切にしていること</h2><span class="sh__en" lang="en">Our stance</span></div>
+    <!-- 【確認事項】文言は制作側の案 -->
+    <ul class="stance-grid reveal">
+      <li><i>i.</i><h3>わかる言葉で話す</h3><p>制度や手続きの話を、専門用語に頼らずに説明し、納得して選べるようにします。</p></li>
+      <li><i>ii.</i><h3>全体を見て、順番を決める</h3><p>目の前の申請や手続きだけでなく、事業と家族の先の姿から逆算して考えます。</p></li>
+      <li><i>iii.</i><h3>関わる人に目を配る</h3><p>経営者だけでなく、家族や従業員など、お金の判断に関わる人たちへの影響まで考えます。</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Flow ===== -->
+<section class="sec" id="flow" data-rail aria-labelledby="flTitle">
+  <div class="wrap">
+    <div class="sh sh--beside"><h2 id="flTitle">ご相談の流れ</h2><span class="sh__en" lang="en">Process</span></div>
+    <!-- 【確認事項】一般的な流れとしての案。順序のある工程のため番号を使用 -->
+    <ol class="steps reveal--fade" data-draw style="--n:5">
+      <li class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__no">01</span><h3>伺う</h3><p class="step__sub">お話を伺う</p><p>いま気になっていること、目指したい姿をお聞きします。</p></li>
+      <li class="step" style="--d:.5s"><span class="step__dot" aria-hidden="true"></span><span class="step__no">02</span><h3>整える</h3><p class="step__sub">状況の整理</p><p>事業の計画や資金、資産の状況を見える形にまとめます。</p></li>
+      <li class="step" style="--d:1s"><span class="step__dot" aria-hidden="true"></span><span class="step__no">03</span><h3>示す</h3><p class="step__sub">選択肢の提示</p><p>使える制度や進め方の候補を並べ、比べながら検討します。</p></li>
+      <li class="step" style="--d:1.5s"><span class="step__dot" aria-hidden="true"></span><span class="step__no">04</span><h3>備える</h3><p class="step__sub">準備を進める</p><p>申請・面談・話し合いなど、必要な準備をともに進めます。</p></li>
+      <li class="step" style="--d:2s"><span class="step__dot" aria-hidden="true"></span><span class="step__no">05</span><h3>見届ける</h3><p class="step__sub">その先まで</p><p>結果を踏まえ、次の一手まで一緒に考えます。</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== Message（草案） ===== -->
+<section class="sec paper" id="message" data-rail data-light aria-labelledby="msgTitle">
+  <!-- 【確認事項】代表メッセージは草案です。ご本人の確認・修正を経て公開してください -->
+  <div class="wrap">
+    <div class="msg reveal">
+      <h2 class="msg__title" id="msgTitle">数字の先に、<br>暮らしがある。</h2>
+      <div class="msg__body">
+        <p class="first">お金の相談は、数字の話であると同時に、人の話だと思っています。</p>
+        <p>補助金や融資の向こうには、事業を前に進めたい経営者の想いがあり、相続の向こうには、家族それぞれの暮らしがあります。</p>
+        <p>だからこそ、制度や手続きを分かりやすく整理し、ご本人が納得して選べる状態をつくることを大切にしています。</p>
+        <p>ひとりで抱えていた書類と迷いを、一枚の見取り図に。その最初の一歩に、どうぞ私たちを使ってください。</p>
+        <!-- 【確認事項】署名欄の氏名は会社概要に記載のため省略。役職名は仮 -->
+        <p class="msg__sign"><small>代表取締役</small><strong>沼里 雅仁</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Company ===== -->
+<section class="sec" id="company" data-rail aria-labelledby="coTitle">
+  <div class="wrap company-grid">
+    <div class="reveal"><div class="sh sh--beside"><h2 id="coTitle">会社概要</h2><span class="sh__en" lang="en">Company</span></div></div>
+    <div class="reveal">
+<dl class="profile">
+  <div><dt>商号</dt><dd>株式会社NMIConsulting</dd></div>
+  <!-- 【確認事項】役職名の表記（代表取締役と仮置き） -->
+  <div><dt>代表者</dt><dd>代表取締役　沼里 雅仁</dd></div>
+  <div><dt>所在地</dt><dd>〒110-0005<br>東京都台東区上野7-8-20　晴花ビル６階</dd></div>
+  <div><dt>事業内容</dt><dd><ul><li>補助金の申請サポートや融資の相談支援などに幅広く携わっています。</li><li>相続に関するご相談に応じるコンサルティング業務も手がけています。</li></ul></dd></div>
+  <!-- 【確認事項】設立年月日・資本金・従業員数はCSVに無いため未掲載。確定後にコメントを外して記入
+  <div><dt>設立</dt><dd>　年　月</dd></div>
+  <div><dt>資本金</dt><dd>　万円</dd></div>
+  <div><dt>従業員数</dt><dd>　名</dd></div>
+  -->
+</dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div>
+      <a class="logo" href="#top" aria-label="株式会社NMIConsulting トップへ"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5h22v22H5z M5 16h22 M16 5v22" fill="none" stroke="#D9694C" stroke-width="1.4"/><circle cx="16" cy="16" r="2.4" fill="#EEEBE4"/></svg><span class="logo__t"><b>NMI Consulting</b><small>株式会社NMIConsulting</small></span></a>
+      <p class="footer-tag">散らばる書類を、一枚の見取り図に。</p>
+    </div>
+    <nav class="footer-nav" aria-label="フッターメニュー">
+      <ul>
+      <li><a href="#concept">考え方</a></li>
+      <li><a href="#business">事業内容</a></li>
+      <li><a href="#stance">大切にしていること</a></li>
+      <li><a href="#flow">ご相談の流れ</a></li>
+      <li><a href="#message">代表メッセージ</a></li>
+      <li><a href="#company">会社概要</a></li>
+      </ul>
+    </nav>
+    <p class="copy"><small>&copy; <span id="year">2026</span> 株式会社NMIConsulting</small></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+var railHooks = [], revealHooks = [];
+var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+/* header */
+var header = document.getElementById('header');
+
+/* menu */
+var btn = document.getElementById('menuBtn'), nav = document.getElementById('gnav');
+function setMenu(open){
+  btn.setAttribute('aria-expanded', String(open));
+  btn.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+  nav.classList.toggle('is-open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+  if (open){ var f = nav.querySelector('a'); if (f) f.focus(); }
+}
+btn.addEventListener('click', function(){ setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+nav.addEventListener('click', function(e){ if (e.target.closest('a') && nav.classList.contains('is-open')) setMenu(false); });
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && nav.classList.contains('is-open')){ setMenu(false); btn.focus(); } });
+matchMedia('(min-width:901px)').addEventListener('change', function(m){ if (m.matches) setMenu(false); });
+
+/* canvas runner (DPR<=2, debounce, pause offscreen/hidden, still frame on reduce) */
+function runCanvas(cv, factory, stillT){
+  if (!cv || !cv.getContext) return null;
+  var ctx = cv.getContext('2d'); if (!ctx) return null;
+  var api = factory(ctx), W = 0, H = 0, running = false, visible = true, raf = 0, t0 = performance.now();
+  function resize(){
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = Math.round(W*dpr); cv.height = Math.round(H*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    api.build(W, H);
+  }
+  function loop(now){ if (!running) return; api.draw((now - t0)/1000); raf = requestAnimationFrame(loop); }
+  function start(){ if (running || reduce || !visible || document.hidden) return; running = true; raf = requestAnimationFrame(loop); }
+  function stop(){ running = false; cancelAnimationFrame(raf); }
+  function still(){ api.draw(stillT || 99); }
+  resize();
+  if (reduce) still(); else start();
+  var rt, lastW = W;
+  addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){
+    if (cv.clientWidth === lastW && Math.abs(cv.clientHeight - H) < 120 && running) return;  /* mobile URL bar */
+    lastW = cv.clientWidth; resize(); if (!running) still(); }, 150); });
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(en){ visible = en[0].isIntersecting; visible ? start() : stop(); }).observe(cv.parentElement);
+  }
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : start(); });
+  return { still: still, isRunning: function(){ return running; } };
+}
+var pointer = {x:.5, y:.5, has:false};
+addEventListener('pointermove', function(e){ pointer.x = e.clientX/innerWidth; pointer.y = e.clientY/innerHeight; pointer.has = true; }, {passive:true});
+function clamp(v,a,b){ return v < a ? a : (v > b ? b : v); }
+function ease(t){ return t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3)/2; }
+
+
+/* hero: 散らばった書類の断片が、方眼に沿って一枚に組み上がる */
+var heroImg = new Image(), imgReady = false;
+var heroRun = runCanvas(document.getElementById('heroCanvas'), function(ctx){
+  var W, H, tiles = [], cols, rows, fit;
+  function cover(){
+    var iw = heroImg.naturalWidth || 1600, ih = heroImg.naturalHeight || 1067, s = Math.max(W/iw, H/ih);
+    return {s:s, ox:(W - iw*s)/2, oy:(H - ih*s)/2, iw:iw, ih:ih};
+  }
+  function rnd(a, b){ return a + Math.random()*(b - a); }
+  return {
+    build: function(w, h){
+      W = w; H = h; fit = cover(); tiles = [];
+      cols = W < 760 ? 5 : 9; rows = Math.max(4, Math.round(cols * H / W));
+      var tw = W/cols, th = H/rows;
+      for (var r = 0; r < rows; r++) for (var c = 0; c < cols; c++){
+        tiles.push({x:c*tw, y:r*th, w:tw, h:th,
+          sx:rnd(-.35, .35)*W, sy:rnd(-.3, .3)*H, rot:rnd(-.7, .7), d:Math.random()*1.3 + (c + r)*.04});
+      }
+    },
+    draw: function(t){
+      ctx.fillStyle = '#111A2B'; ctx.fillRect(0, 0, W, H);
+      var px = pointer.x*W, py = pointer.y*H;
+      tiles.forEach(function(q){
+        var k = ease(clamp((t - .2 - q.d)/1.7, 0, 1));
+        var dx = q.sx*(1 - k), dy = q.sy*(1 - k), rot = q.rot*(1 - k);
+        if (k >= 1 && pointer.has){ var d = Math.hypot(q.x + q.w/2 - px, q.y + q.h/2 - py); var lift = Math.max(0, 1 - d/260); dy -= lift*6; }
+        ctx.save();
+        ctx.translate(q.x + q.w/2 + dx, q.y + q.h/2 + dy); ctx.rotate(rot);
+        ctx.globalAlpha = .25 + .75*k;
+        if (imgReady){
+          var sx = (q.x - fit.ox)/fit.s, sy = (q.y - fit.oy)/fit.s;
+          ctx.drawImage(heroImg, sx, sy, q.w/fit.s, q.h/fit.s, -q.w/2 - .5, -q.h/2 - .5, q.w + 1, q.h + 1);
+        } else { ctx.fillStyle = '#18233A'; ctx.fillRect(-q.w/2, -q.h/2, q.w, q.h); }
+        ctx.globalAlpha = 1;
+        ctx.strokeStyle = 'rgba(238,235,228,' + (.5*(1 - k) + .04) + ')'; ctx.lineWidth = 1;
+        ctx.strokeRect(-q.w/2, -q.h/2, q.w, q.h);
+        ctx.restore();
+      });
+      ctx.fillStyle = 'rgba(17,26,43,.58)'; ctx.fillRect(0, 0, W, H);
+      /* 朱の墨線：方眼が引かれる */
+      var g = clamp((t - 2.6)/2, 0, 1);
+      if (g > 0){
+        ctx.strokeStyle = 'rgba(217,105,76,.34)'; ctx.lineWidth = 1;
+        var tw = W/cols, th = H/rows, i;
+        for (i = 1; i < cols; i++){ var L = clamp(g*1.4 - i*.05, 0, 1); ctx.beginPath(); ctx.moveTo(i*tw, 0); ctx.lineTo(i*tw, H*L); ctx.stroke(); }
+        for (i = 1; i < rows; i++){ var L2 = clamp(g*1.4 - i*.05, 0, 1); ctx.beginPath(); ctx.moveTo(0, i*th); ctx.lineTo(W*L2, i*th); ctx.stroke(); }
+        /* 図面をなぞる走査線 */
+        if (g >= 1){
+          var yy = ((t - 4.6)*40) % (H + 80) - 40;
+          var gr = ctx.createLinearGradient(0, yy - 40, 0, yy);
+          gr.addColorStop(0, 'rgba(217,105,76,0)'); gr.addColorStop(1, 'rgba(217,105,76,.16)');
+          ctx.fillStyle = gr; ctx.fillRect(0, yy - 40, W, 40);
+          ctx.fillStyle = 'rgba(217,105,76,.55)'; ctx.fillRect(0, yy, W, 1);
+        }
+      }
+    }
+  };
+}, 4.7);
+heroImg.onload = function(){ imgReady = true; if (heroRun && !heroRun.isRunning()) heroRun.still(); };
+heroImg.src = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1800&q=72';
+
+/* rail: 方位針が北に定まる */
+var needle = document.getElementById('railNeedle'), nRead = document.getElementById('railRead');
+railHooks.push(function(p){
+  var ang = reduce ? 0 : (1 - p) * 38 * Math.sin(p * 26 + .6);
+  needle.style.top = (p*100) + '%';
+  needle.style.transform = 'translate(-50%,-50%) rotate(' + ang.toFixed(1) + 'deg)';
+  nRead.style.top = (p*100) + '%';
+  var a = Math.round(Math.abs(ang)); nRead.textContent = (a === 0 ? '±' : (ang > 0 ? '+' : '−')) + (a < 10 ? '0' : '') + a + '°';
+});
+
+
+/* reveal (one-shot) */
+var targets = document.querySelectorAll('.reveal, [data-draw]');
+function reveal(el){ el.classList.add('is-in'); revealHooks.forEach(function(h){ h(el); }); }
+if ('IntersectionObserver' in window && !reduce){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (!en.isIntersecting) return; reveal(en.target); io.unobserve(en.target); });
+  }, {threshold:.18, rootMargin:'0px 0px -6% 0px'});
+  targets.forEach(function(t){ io.observe(t); });
+} else { targets.forEach(reveal); }
+
+/* rail */
+var rail = document.getElementById('rail'), fill = document.getElementById('railFill');
+var secs = Array.prototype.slice.call(document.querySelectorAll('[data-rail]')), ticks = [];
+var lights = Array.prototype.slice.call(document.querySelectorAll('[data-light]'));
+function layoutTicks(){
+  ticks.forEach(function(t){ t.el.remove(); }); ticks = [];
+  var max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+  secs.forEach(function(s){
+    var p = clamp(s.offsetTop / max, 0, 1), el = document.createElement('i');
+    el.className = 'rail__tick'; el.style.top = (p*100) + '%'; rail.appendChild(el); ticks.push({p:p, el:el});
+  });
+}
+var band = document.querySelector('.band img');
+function onScroll(){
+  header.classList.toggle('is-scrolled', scrollY > 40);
+  var max = document.documentElement.scrollHeight - innerHeight;
+  var p = max > 0 ? clamp(scrollY / max, 0, 1) : 0;
+  fill.style.transform = 'scaleY(' + p + ')';
+  ticks.forEach(function(t){ t.el.classList.toggle('is-passed', p >= t.p - .002); });
+  var mid = innerHeight/2, onLight = lights.some(function(s){ var r = s.getBoundingClientRect(); return r.top < mid && r.bottom > mid; });
+  rail.classList.toggle('on-light', onLight);
+  railHooks.forEach(function(h){ h(p, ticks); });
+  if (band && !reduce){
+    var r = band.parentElement.getBoundingClientRect();
+    if (r.bottom > 0 && r.top < innerHeight){ var k = (r.top + r.height/2 - innerHeight/2)/innerHeight; band.style.transform = 'translateY(' + (k*-40).toFixed(1) + 'px)'; }
+  }
+}
+var ticking = false;
+addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(function(){ onScroll(); ticking = false; }); } }, {passive:true});
+addEventListener('load', function(){ layoutTicks(); onScroll(); });
+addEventListener('resize', function(){ layoutTicks(); onScroll(); });
+layoutTicks(); onScroll();
+
+requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.body.classList.add('is-loaded'); }); });
+})();
+</script>
+</body>
+</html>
